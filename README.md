@@ -10,5 +10,5 @@ Bash script for pretty printing of domain information. Retrieves the following i
 * Name Servers
 
 # Usage
-checkdom <domain>
+    checkdom <domain>
 Example: checkdom google.pt
