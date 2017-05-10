@@ -12,42 +12,42 @@ DOMAIN=$1
 
 #Domain General info (whois)
 echo "General and public information from whois:"
-whois $1 | grep -w 'Registrant\|Admin\|Tech'
+whois DOMAIN | grep -w 'Registrant\|Admin\|Tech'
 echo "#################################"
 echo " "
 
 #SOA Record
 echo "SOA Records:"
-host -t soa $1
+host -t soa DOMAIN
 echo "#################################"
 echo " "
 
 #A Records
 echo "A Records:"
-host -t a $1
+host -t a DOMAIN
 echo "#################################"
 echo " "
 
 #CNAME Records
 echo "CNAME Records:"
-host -t cname $1
+host -t cname DOMAIN
 echo "#################################"
 echo " "
 
 #MX Records
 echo "MX Records:"
-host -t mx $1
+host -t mx DOMAIN
 echo "#################################"
 echo " "
 
 #TXT Records
 echo "TXT Records:"
-host -t txt $1
+host -t txt DOMAIN
 echo "#################################"
 echo " "
 
 #Name Servers
 echo "Name servers:"
-host -t ns $1
+host -t ns DOMAIN
 echo "#################################"
 echo " "
